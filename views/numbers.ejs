@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link href="/assets/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <% if (ID %2 === 0) { %>
+            <h1>
+                <ul>
+                    <% for (let i =1; i <= ID * 2;  i++ ) { %>
+                        <li><%= i %> 
+                            <% } %>
+                        </li>  
+                </ul>
+            </h1>
+            <% } else { %>  
+            <h1>
+                <ul>
+                    <% for (let i =1; i <=ID;  i++ ) { %>
+                        <li><%= i %> 
+                            <% } %>
+                        </li>  
+                </ul>
+            </h1><% } %>
+    </body>
+</html>
+
