@@ -3,18 +3,22 @@
         <link href="/assets/style.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
+        <!--Condicional que determina si el número que se ingresa es par-->
         <% if (ID %2 === 0) { %>
             <h1>
                 <ul>
+                    <!--En caso de que sí es par, se hace el ciclo para imprimir el doble de ID-->
                     <% for (let i =1; i <= ID * 2;  i++ ) { %>
                         <li><%= i %> 
                             <% } %>
                         </li>  
                 </ul>
             </h1>
+            <!--Si el número no es par...-->
             <% } else { %>  
             <h1>
                 <ul>
+                    <!--Si no es par, se imprime el número de ID-->
                     <% for (let i =1; i <=ID;  i++ ) { %>
                         <li><%= i %> 
                             <% } %>
